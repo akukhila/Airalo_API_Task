@@ -18,7 +18,7 @@ In this file you can find instructions and explanations for the test task.
 
 Collection contains 3 requests
 
-- GET Get packages (`Get Packages`)
+- GET Get packages (`Get Packages` endpoint)
 - POST Make eSIM order(`Submit Order` endpoint)
 - GET Check eSIM list (`Get eSIMs List` endpoint)
 
@@ -26,9 +26,9 @@ Each request contains:
 - Pre-request script that checking validity of the token and updates it if needed;
 - Post-response scripts to check status code'
 
-POST Make eSIM order request also contains a test that checks that correct data were sent (quantity, package id, description and type);
+`POST Make eSIM order` request also contains a test that checks that correct data were sent (quantity, package id, description and type);
 
-GET Check eSIM list request also contains tests that checks that the quantity of the eSIMs is equal to six and checks the package_id for each eSIM;
+`GET Check eSIM` list request also contains tests that checks that the quantity of the eSIMs is equal to six and checks the package_id for each eSIM;
 
 Please let me know if, for example, it was needed to consider a test scenario when we receive more than 6 esims in the GET request and it is needed to find 6 eSIMs that was posted last time.
 
